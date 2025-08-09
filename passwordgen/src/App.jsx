@@ -1,6 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
 import './App.css';
-
 function App() {
   const [length, setLength] = useState(8);
   const [numberAllowed, setNumberAllowed] = useState(false);
@@ -29,7 +28,7 @@ function App() {
   const copyPasswordToClipboard = () => {
     if (passwordRef.current) {
       passwordRef.current.select();
-      passwordRef.current.setSelectionRange(0, 99999); // Select text for mobile devices
+      passwordRef.current.setSelectionRange(0, 99999); 
       navigator.clipboard.writeText(password);
       alert('Password copied to clipboard!');
     }
@@ -60,6 +59,7 @@ function App() {
         >
           Copy
         </button>
+        
       </div>
 
       {/* Options: Length, Numbers, Characters */}
