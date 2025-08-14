@@ -9,7 +9,10 @@ function BlogContainer() {
 
   return (
     <div>
-        <Blog title="phone" price={15000} features={options.map((feature)=><li>{feature}</li>)} features2={option2}/>
+        <Blog title="phone" price={15000} features={options.map((feature)=>
+          <li>{feature}</li>)}
+          features2={option2}
+          />
         <Blog title="laptop" price={50000}/>
         <Blog title="tab" />     
      </div>
