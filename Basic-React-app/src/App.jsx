@@ -19,8 +19,8 @@ function App() {
   <>
   <MsgBox userName="shradha" textColor="red" />
   <MsgBox userName="prathamesh" textColor="blue" />
-  
   <MyBtton />
+  <h1>Blockbuster Deals | Shop Now</h1>
   <BlogContainer />
   </> 
   );

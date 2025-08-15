@@ -1,20 +1,20 @@
 import Blog from "./blog";
 
+
 function BlogContainer() {
-  //let options = [<li>"highh-quality"</li>, <li>"affordable"</li>, <li>"durable"</li>];
-  let options = ["high-quality", "affordable", "durable"];
-   //let list = options.map((feature)=><li>{feature}</li>);
-  let option2 = {a:"fast", b:"responsive", c:"easy-to-use"};
- 
+let styles = {
+  display: "flex",
+  flexwrap : "wrap",
+  justifyContent: "space-around",
+  alignItems: "center",
+};
 
   return (
-    <div>
-        <Blog title="phone" price={15000} features={options.map((feature)=>
-          <li>{feature}</li>)}
-          features2={option2}
-          />
-        <Blog title="laptop" price={50000}/>
-        <Blog title="tab" />     
+    <div style={styles}> 
+       <Blog Title="victus 12th gen" Product="Hp" idx={0}/>
+       <Blog  Title="gell G50" Product="dell" idx={1}/>
+       <Blog  Title="assus Vivobook 13th gen" Product="VivoBook" idx={2}/>
+       <Blog  Title="map-book pro" Product="Apple" idx={3}/>
      </div>
   );
 }
